@@ -1,3 +1,14 @@
+/* playing with bckgr position and bckgr size */
+.back-sizer {
+    height: 800px;
+    border: 2px solid black;
+    background-repeat: no-repeat;
+    background-image: url("../images/puppy-full.jpg");
+    background-size: cover;
+    background-position: 70% center;
+    
+}
+
 .test2 img {
     width: 100vw;
     /* viewport width */

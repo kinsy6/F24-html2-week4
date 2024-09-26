@@ -12,6 +12,9 @@
         <h1>HTML Responsive Images</h1>
     </header>
     <main>
+      <section class="back-sizer">
+        <!-- we're using this section to play with backgroung images -->
+      </section>
         <section>
           <!-- src st supplies a set of images for the browser to choose 
            you set the conditions for the browser -->
@@ -36,6 +39,23 @@
                 (min-width:900px) 66.6vw
                 (min-width:1200px) 33.3vw"
             src="images/puppy-1.0.jpg" alt="A white puppy standing in short grass">
+        </section>
+
+        <section>
+          <!-- the srcset attribute is graet for showing the same image in different sizes
+           the picture tag is for showing a diff image at diff sizes -->
+           <picture>
+            <source srcset="images/puppy-1200.jpg"
+                    media="(min-width:1240px)">
+
+            <source srcset="images/puppy-900.jpg"
+                    media="(min-width:940px)">
+
+            <source srcset="images/puppy-600.jpg"
+                    media="(min-width:939px)">
+                    
+            <img src="images/puppy-600.jpg" alt="A white puppy standing in short grass">       
+           </picture>
         </section>
     </main>
     <footer>
